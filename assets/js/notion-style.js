@@ -237,18 +237,69 @@ const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         // Form will be submitted via FormSubmit service
-        // Just add some visual feedback
+        // Add visual feedback to user
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
 
         submitBtn.textContent = 'Sending...';
         submitBtn.disabled = true;
 
-        // The form will naturally submit after 1 second
+        // Show success message after submission
         setTimeout(() => {
-            // This will be handled by FormSubmit service
-        }, 1000);
+            // Create success notification
+            const successMsg = document.createElement('div');
+            successMsg.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background-color: #10b981;
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                font-weight: 500;
+                z-index: 9999;
+                animation: slideIn 0.3s ease-out;
+            `;
+            successMsg.textContent = '✓ Message sent successfully! I\'ll get back to you soon.';
+            document.body.appendChild(successMsg);
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                successMsg.style.animation = 'slideOut 0.3s ease-out';
+                setTimeout(() => successMsg.remove(), 300);
+            }, 5000);
+        }, 500);
     });
+
+    // Add animation styles if not already present
+    if (!document.getElementById('form-animations')) {
+        const style = document.createElement('style');
+        style.id = 'form-animations';
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
 }
 
 // ===== Page Load Animation ===== //
