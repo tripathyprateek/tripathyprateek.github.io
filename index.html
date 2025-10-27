@@ -1,283 +1,393 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Prateek Tripathy</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prateek Tripathy - Software Engineer specializing in Cloud, DevOps & Backend Development">
+    <title>Prateek Tripathy | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-        <header>
-            <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-            <h1 id="logo"><a href="#">Prateek Tripathy</a></h1>
-            <p>
-                Open Source mentor at
-                <a href="https://github.com/astrosonic">AstroSonic</a><br /> Interested in Cloud, DevOps & Backend Development.
-            </p>
-        </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="#one" class="active">About Me</a></li>
-                <li><a href="#two">Things I have done</a></li>
-                <li><a href="#three">Projects</a></li>
-                <li><a href="#four">Work Experience</a></li>
-                <li><a href="#five">Get in touch</a></li>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Prateek Tripathy</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-        </nav>
-        <footer>
-            <ul class="icons">
-                <li>
-                    <a href="https://twitter.com/prateekonmars" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/in/tripathyprateek"
-              target="_blank"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://peerlist.io/prateek"
-              target="_blank"
-              class="icon brands fa-product-hunt"
-              ><span class="label">Peerlist</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/tripathyprateek"
-              target="_blank"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:tripathyprateek@gmail.com"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </footer>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Prateek Tripathy</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer | Cloud Enthusiast | Open Source Contributor</p>
+                <p class="hero-description">
+                    Passionate about building scalable backend systems, cloud infrastructure, and contributing to open source.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://drive.google.com/file/d/1FMKyoTeNYRs8VnMJSmaelqXhLgFAzLQv/view?usp=sharing" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tripathyprateek" target="_blank" aria-label="GitHub" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank" aria-label="LinkedIn" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/prateekonmars" target="_blank" aria-label="Twitter" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://peerlist.io/prateek" target="_blank" aria-label="Peerlist" class="social-icon">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <a href="mailto:tripathyprateek@gmail.com" aria-label="Email" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/avatar.jpg" alt="Prateek Tripathy">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Main -->
-      <div id="main">
-        <!-- One -->
-        <section id="one">
-          <div class="image main" data-position="center">
-            <img src="images/background.jpg" alt="" />
-          </div>
-          <div class="container">
-            <header class="major">
-              <h2>Prateek Tripathy</h2>
-              <p>
-                Final year undergrad, VSSUT Burla,<br />Information Technology,
-                Batch of 2022
-              </p>
-            </header>
-            <p>
-              Looking for full time opportunities. Take a look at my resume
-              <a
-                href
-                ="https://drive.google.com/file/d/1FMKyoTeNYRs8VnMJSmaelqXhLgFAzLQv/view?usp=sharing" target="_blank"
-                ><strong>here.</strong></a><br /> Interested in Cloud Computing and Backend Web Development.
-                    <br />Open source contributor,Co-founder ,<a href="https://github.com/astrosonic">
-                AstroSonic</a
-              >, LiFT Scholar 2021.
-            </p>
-          </div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineer passionate about cloud computing and backend development.
+                        As a Co-founder of <a href="https://github.com/astrosonic" target="_blank" class="inline-link">AstroSonic</a>
+                        and an open source mentor, I love working with cutting-edge technologies and building scalable solutions.
+                    </p>
+                    <p>
+                        I graduated from VSSUT Burla with a degree in Information Technology (Class of 2022).
+                        I'm a LiFT Scholar 2021 and have contributed to various open-source projects,
+                        focusing on service meshes, microservices architecture, and cloud-native technologies.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me participating in hackathons, solving competitive programming challenges,
+                        or exploring new technologies in the cloud and DevOps ecosystem.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Open Source</h3>
+                        <p>Active Contributor</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Hackathons</h3>
+                        <p>Regular Participant</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                        <p>Specialized Focus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Two -->
-        <section id="two">
-          <div class="container">
-            <h3>Things I have done</h3>
-            <p>
-              A short list of things I am really passionate about. I love
-              working on new technologies and taking up challenges.
-            </p>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">Fullstack Development</li>
-              <li class="icon solid fa-cubes">Cloud Computing</li>
-              <li class="icon solid fa-book">Open Source Contribution</li>
-              <li class="icon solid fa-coffee">Hackathons</li>
-              <li class="icon solid fa-bolt">Competitive Programming</li>
-              <li class="icon solid fa-users">Machine Learning</li>
-            </ul>
-          </div>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Go, GraphQL, REST APIs</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>AWS, Docker, Kubernetes, Microservices</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Container Orchestration, Infrastructure as Code</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MongoDB, Redis</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                    <p>React.js, JavaScript, HTML/CSS</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Data Analysis, ML Algorithms, Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Three -->
-        <section id="three">
-          <div class="container">
-            <h3>Some of my Projects</h3>
-            <div class="features">
-              <article>
-                <a
-                  href="https://github.com/tripathyprateek/microservices-store"
-                  target="_blank"
-                  class="image"
-                  ><img src="images/microservices.jpg" alt=""
-                /></a>
-                    <div class="inner">
-                        <h4>Microservices Store</h4>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/microservices.jpg" alt="Microservices Store">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tripathyprateek/microservices-store" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices Store</h3>
+                        <p>E-commerce platform built with React.js and Node.js, featuring Docker and Kubernetes support for enhanced scalability and reliability.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/shieldwalker.jpg" alt="ShieldWalker">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tripathyprateek/ShieldWalker" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ShieldWalker</h3>
+                        <p>Safety-focused web application using ML algorithms and Google Maps API to predict and suggest safer travel routes.</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">ML</span>
+                            <span class="tag">Maps API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/network cli.jpg" alt="Network CLI">
+                        <div class="project-overlay">
+                            <a href="https://github.com/tripathyprateek/Network-CLI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network-CLI</h3>
+                        <p>Lightweight network discovery client written in Go for finding nameservers, IP addresses, and CNAMEs without external dependencies.</p>
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                            <span class="tag">CLI</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card cta-card">
+                    <div class="project-image">
+                        <img src="images/github.jpg" alt="More Projects">
+                    </div>
+                    <div class="project-content">
+                        <h3>More Projects</h3>
+                        <p>Check out my GitHub profile for more exciting projects and open-source contributions!</p>
+                        <a href="https://github.com/tripathyprateek" target="_blank" class="btn btn-primary">
+                            View GitHub <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Open Source Contributor</h3>
+                        <h4>Layer5</h4>
+                        <p class="timeline-date">September 2020 - March 2021</p>
                         <p>
-                            E Commerce store made using React Js & Node Js and added support with Docker & Kubernetes for scalability & reliability.
+                            Actively contributed to Layer5's open-source service mesh projects using JavaScript, Go, and GraphQL.
+                            Collaborated with global developers to enhance cloud-native infrastructure tools.
                         </p>
                     </div>
-                    </article>
-                    <article>
-                        <a href="https://github.com/tripathyprateek/ShieldWalker" target="_blank" class="image"><img src="images/shieldwalker.jpg" alt="" /></a>
-                        <div class="inner">
-                            <h4>Shieldwalker</h4>
-                            <p>
-                                App that takes you home safely. Web application built using Node Js and Express Js.<br /> Uses Machine Learning algorithms & Google Maps API to predict a safer route to travel.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="https://github.com/tripathyprateek/Network-CLI" target="_blank" class="image"><img src="images/network cli.jpg" alt="" /></a>
-                        <div class="inner">
-                            <h4>Network-CLI</h4>
-                            <p>
-                                Network discovery client written in Go.<br /> Finds nameservers, ip address, and CNAME of websites without using any additional dependencies.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <a href="https://github.com/tripathyprateek" target="_blank" class="image"><img src="images/github.jpg" alt="" /></a>
-                        <div class="inner">
-                            <h4>Liked what you have seen so far?</h4>
-                            <p>
-                                Take a look at the rest of the things I am currently working upon
-                                <a href="https://github.com/tripathyprateek"><strong>here!</strong></a
-                    >
-                  </p>
                 </div>
-              </article>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Fullstack Developer Intern</h3>
+                        <h4>NURSD LLC</h4>
+                        <p class="timeline-date">August 2020 - October 2020</p>
+                        <p>
+                            Developed application features using Apollo and PostgreSQL. Designed and implemented
+                            GraphQL APIs for workflow automation and data management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <h4>Digital Tesseract</h4>
+                        <p class="timeline-date">May 2020 - June 2020</p>
+                        <p>
+                            Conducted data analysis and created educational machine learning content.
+                            Developed tutorials and documentation for ML implementation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <h4>CDAC Pune</h4>
+                        <p class="timeline-date">December 2019 - January 2020</p>
+                        <p>
+                            Developed parallel applications using OpenMP and MPI. Implemented machine learning
+                            models for image recognition projects.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
-
-        <!-- four -->
-        <section id="four">
-          <div class="container">
-            <h3>Work Experience</h3>
-            <ul class="feature-icons">
-              <li class="icon solid fa-code">
-                Open Source Contributor, Layer5<br />
-                <p>
-                  September'20 - March'21<br />
-                  Layer5 is an open-source community developing service meshes.
-                  <br />I actively contributed using technologies like
-                  JavaScript, Go, and Graph QL.
-                </p>
-              </li>
-              <li class="icon solid fa-briefcase">
-                Fullstack Intern, NURSD LLC<br />
-                <p>
-                  August'20 - October'20<br />
-                  Worked on their application using Apollo, PostgreSQL and
-                  designed APIs for workflows using GraphQL
-                </p>
-              </li>
-              <li class="icon solid fa-briefcase">
-                ML Intern, Digital Tesseract<br />
-                <p>
-                  May'20 - June'20<br />
-                  Responsible for Data analysis and creating Machine Learning
-                  content at Digital Tesseract.
-                </p>
-              </li>
-              <li class="icon solid fa-briefcase">
-                ML Intern, CDAC Pune<br />
-                <p>
-                  December'19 - January'20<br />
-                  Developed parallel applications using Open MP and MPI<br />
-                  Used Machine Learning for an Image Recognition Project.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!-- four -->
-
-        <!-- five -->
-        <section id="five">
-          <div class="container">
-            <h3>Get in touch</h3>
-            <form method="post" action="https://formsubmit.co/05231d6a678c00ca4ae884f711c9b09f">
-              <div class="row gtr-uniform">
-                <div class="col-6 col-12-xsmall">
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                </div>
-                <div class="col-6 col-12-xsmall">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-                <div class="col-12">
-                  <input
-                    type="text"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    rows="6"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <ul class="actions">
-                    <li>
-                      <input type="submit" class="primary" value="Send Email" />
-                    </li>
-                    <li><input type="reset" value="Reset Form" /></li>
-                  </ul>
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <section id="footer">
-        <div class="container">
-          <ul class="copyright">
-            <li>&copy; Prateek Tripathy. All rights reserved.</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-            </div>
+        </div>
     </section>
-    </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in hearing about new opportunities, collaborations, or just having a chat about technology.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:tripathyprateek@gmail.com">tripathyprateek@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/tripathyprateek" target="_blank">github.com/tripathyprateek</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/tripathyprateek" target="_blank">linkedin.com/in/tripathyprateek</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" method="post" action="https://formsubmit.co/05231d6a678c00ca4ae884f711c9b09f">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Prateek Tripathy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/tripathyprateek" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/prateekonmars" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/portfolio.js"></script>
+</body>
 </html>
