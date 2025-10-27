@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prateek Tripathy - Software Engineer specializing in Cloud, DevOps & Backend Development">
-    <title>Prateek Tripathy | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <meta name="description" content="Prateek Tripathy - MBA Product Manager | AI/ML | IBM Product Manager | B2B SaaS Strategy">
+    <title>Prateek Tripathy - Product Manager & AI Strategist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/linkedin-theme.css">
 </head>
 <body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Prateek Tripathy</a>
+                <span class="logo-text">Prateek Tripathy</span>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -23,229 +31,474 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Prateek Tripathy</span>
-                </h1>
-                <p class="hero-subtitle">Software Engineer | Cloud Enthusiast | Open Source Contributor</p>
-                <p class="hero-description">
-                    Passionate about building scalable backend systems, cloud infrastructure, and contributing to open source.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://drive.google.com/file/d/1FMKyoTeNYRs8VnMJSmaelqXhLgFAzLQv/view?usp=sharing" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
+    <!-- Profile Header Section -->
+    <section id="home" class="profile-header">
+        <div class="profile-banner"></div>
+        <div class="profile-container">
+            <div class="profile-wrapper">
+                <div class="profile-left">
+                    <div class="profile-photo">
+                        <img src="images/prateek-profile.jpg" alt="Prateek Tripathy">
+                    </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/tripathyprateek" target="_blank" aria-label="GitHub" class="social-icon">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank" aria-label="LinkedIn" class="social-icon">
+                <div class="profile-right">
+                    <div class="profile-details">
+                        <h1>Prateek Tripathy</h1>
+                        <p class="profile-title">Product Manager Intern - IBM | MBA-BM, XIMB</p>
+                        <p class="profile-subtitle">Aspiring AI Product Manager</p>
+                        <div class="profile-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Bhubaneswar, Odisha, India
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-briefcase"></i>
+                                IBM | Xavier Institute of Management
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-code"></i>
+                                25+ months experience
+                            </span>
+                        </div>
+                        <p class="profile-bio">
+                            Passionate Product Manager with deep expertise in AI product strategy. Currently pursuing MBA at Xavier Institute of Management.
+                        </p>
+                        <div class="profile-actions">
+                            <a href="#experience" class="btn btn-primary">
+                                <i class="fas fa-briefcase"></i> View Experience
+                            </a>
+                            <a href="assets/resume.pdf" download class="btn btn-secondary">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-footer">
+                <div class="social-links-header">
+                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank" class="social-link-large" aria-label="LinkedIn" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://twitter.com/prateekonmars" target="_blank" aria-label="Twitter" class="social-icon">
+                    <a href="https://github.com/tripathyprateek" target="_blank" class="social-link-large" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/prateekonmars" target="_blank" class="social-link-large" aria-label="Twitter" title="Twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://peerlist.io/prateek" target="_blank" aria-label="Peerlist" class="social-icon">
-                        <i class="fas fa-user-circle"></i>
-                    </a>
-                    <a href="mailto:tripathyprateek@gmail.com" aria-label="Email" class="social-icon">
+                    <a href="mailto:um24360@stu.xim.edu.in" class="social-link-large" aria-label="Email" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="images/avatar.jpg" alt="Prateek Tripathy">
-                </div>
-            </div>
         </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll to about section">
-            <i class="fas fa-chevron-down"></i>
-        </a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About</h2>
             <div class="about-content">
                 <div class="about-text">
+                    <h3>Product Manager | AI/ML Enthusiast | System Thinker</h3>
                     <p>
-                        I'm a software engineer passionate about cloud computing and backend development.
-                        As a Co-founder of <a href="https://github.com/astrosonic" target="_blank" class="inline-link">AstroSonic</a>
-                        and an open source mentor, I love working with cutting-edge technologies and building scalable solutions.
+                        I'm an MBA student at Xavier Institute of Management (Batch 2024-26) passionate about using artificial intelligence to solve complex product challenges.
+                        As an IBM Product Manager Intern, I worked on AI-driven networking solutions, conducting market research that identified a $2 billion market opportunity, eventually identifying a new product now known as IBM Network intelligence.
                     </p>
                     <p>
-                        I graduated from VSSUT Burla with a degree in Information Technology (Class of 2022).
-                        I'm a LiFT Scholar 2021 and have contributed to various open-source projects,
-                        focusing on service meshes, microservices architecture, and cloud-native technologies.
+                        With 25+ months of work experience at Infosys as a Specialist Programmer, I've honed my technical acumen and cross-functional collaboration skills.
+                        I'm equally comfortable deep-diving into technical architectures (APIs, event streaming, distributed systems) and understanding business expectations.
                     </p>
                     <p>
-                        When I'm not coding, you'll find me participating in hackathons, solving competitive programming challenges,
-                        or exploring new technologies in the cloud and DevOps ecosystem.
+                        My strengths lie in identifying market gaps, architecting product solutions, and translating complex technical concepts into business value.
+                        I'm also deeply invested in community building —I organize GrabChai networking events across 15+ global cities for Product Managers and AI enthusiasts as Community Manager at The Product Folks.
+                    </p>
+                    <p>
+                        <strong>What drives me:</strong> Building intelligent products that scale, understanding AI's potential in enterprise solutions.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <i class="fas fa-code"></i>
-                        <h3>Open Source</h3>
-                        <p>Active Contributor</p>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>Technical Depth</h4>
+                        <p>Designed APIs reducing response time by 35%; Kafka implementation</p>
                     </div>
-                    <div class="stat-card">
+                    <div class="highlight-card">
+                        <i class="fas fa-users"></i>
+                        <h4>Community Leader</h4>
+                        <p>Organized 15+ GrabChai events; X-SEED Co-coordinator</p>
+                    </div>
+                    <div class="highlight-card">
                         <i class="fas fa-trophy"></i>
-                        <h3>Hackathons</h3>
-                        <p>Regular Participant</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-cloud"></i>
-                        <h3>Cloud & DevOps</h3>
-                        <p>Specialized Focus</p>
+                        <h4>Award Winner</h4>
+                        <p>National PM case competition winner; International scholar</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Work Experience Section -->
+    <section id="experience" class="section experience-section">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="timeline">
+                <!-- Community Manager - The Product Folks -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">TPF</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Community Manager</h3>
+                                <p class="company">The Product Folks</p>
+                            </div>
+                            <span class="period">Feb 2025 - Present</span>
+                        </div>
+                        <p class="experience-description">
+                            Organizing and scaling GrabChai networking events for Product Managers and AI enthusiasts across 15+ global cities.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Organizing offline networking events (GrabChai) across 15+ global cities</li>
+                            <li>Building vibrant community of PM and AI enthusiasts</li>
+                            <li>Facilitating knowledge sharing and collaboration among product professionals</li>
+                            <li>Growing community engagement and participation globally</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- X-SEED Coordinator -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">XIMB</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Co-Coordinator, X-SEED</h3>
+                                <p class="company">Xavier Institute of Management - Entrepreneurship Cell</p>
+                            </div>
+                            <span class="period">Mar 2025 - Present</span>
+                        </div>
+                        <p class="experience-description">
+                            Leading the entrepreneurship cell at XIMB, fostering innovation and startup thinking among MBA cohort.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Coordinating as full Coordinator after Shadow Member role (Sep 2024 - Feb 2025)</li>
+                            <li>Fostering innovation and startup thinking among MBA cohort</li>
+                            <li>Organizing entrepreneurship events and competitions</li>
+                            <li>Mentoring student entrepreneurs and building startup ecosystem</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IBM Product Manager Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">IBM</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Product Manager Intern</h3>
+                                <p class="company">IBM - Software Defined Networking</p>
+                            </div>
+                            <span class="period">Apr 2025 - Jun 2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Led AI integration and market research initiatives across IBM's networking portfolio, identifying billion-dollar market opportunities.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Identified and correlated metrics across IBM's Software Networking portfolio products to optimize end-to-end network lifecycle</li>
+                            <li>Conducted market scan and benchmark analysis of AI-driven networking, identifying market opportunities and gaps</li>
+                            <li>Delivered Generative AI integration ideas with quantifiable business impact in existing products enabling product differentiation</li>
+                            <li>Designed AI optimization architecture using RAG, ETL, MCP, and Agentic AI that enabled new product discovery</li>
+                            <li><strong>Skills:</strong> Product Management, Software Defined Networking, AI Networking, Generative AI, B2B Software</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Infosys Specialist Programmer -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">INF</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Specialist Programmer</h3>
+                                <p class="company">Infosys Limited</p>
+                            </div>
+                            <span class="period">Jun 2022 - Jul 2024 • 2 yrs 2 mos</span>
+                        </div>
+                        <p class="experience-description">
+                            Drove product development across multiple projects, managing agile teams and delivering high-performance backend solutions.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li><strong>Agile Transformation:</strong> Drove adoption of agile strategies among 3 cross-functional teams, aligning project outcomes with client expectations</li>
+                            <li><strong>API Architecture:</strong> Designed robust APIs for backend services ensuring high availability and seamless integration, reducing response time by 35%</li>
+                            <li><strong>Technical Documentation:</strong> Implemented comprehensive HLD and LLD to enhance client understanding of functionality and improve project documentation</li>
+                            <li><strong>Event Streaming:</strong> Analyzed and advocated client adoption of Apache Kafka, resulting in reduction of real-time data sharing latency from 2 seconds to 500ms</li>
+                            <li><strong>Frontend Execution:</strong> Executed frontend technical requirements based on provided wireframes, ensuring 100% adherence to industry standards</li>
+                            <li><strong>Skills:</strong> Full-Stack Development, Cloud Applications, Spring Boot, Angular, SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Airblack SDE Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">AIR</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Software Development Engineer Intern</h3>
+                                <p class="company">Airblack</p>
+                            </div>
+                            <span class="period">Feb 2022 - Jul 2022 • 6 months</span>
+                        </div>
+                        <p class="experience-description">
+                            Developed backend services and APIs for an ed-tech platform focused on creative skills education.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Backend development and API design</li>
+                            <li>Node.js application development</li>
+                            <li>Building scalable backend services</li>
+                            <li><strong>Skills:</strong> Backend Development, Node.js, Application Programming Interfaces (API)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- VSSUT Training & Placement -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">VSSUT</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Training and Placement Coordinator</h3>
+                                <p class="company">Training & Placement Cell - VSSUT Burla</p>
+                            </div>
+                            <span class="period">Jun 2021 - May 2022 • 1 year</span>
+                        </div>
+                        <p class="experience-description">
+                            Coordinated placement activities and career development initiatives for students, connecting talent with industry opportunities.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Coordinated placement activities for students</li>
+                            <li>Built university-industry relationships</li>
+                            <li>Organized recruitment drives and campus interviews</li>
+                            <li>Career counseling and professional development guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Digital Tesseract ML Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">DT</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Machine Learning Intern</h3>
+                                <p class="company">Digital Tesseract</p>
+                            </div>
+                            <span class="period">May 2020 - Jun 2020 • 2 months</span>
+                        </div>
+                        <p class="experience-description">
+                            Conducted data analysis and created educational machine learning content for online learning platforms.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Data analysis and visualization</li>
+                            <li>Machine learning model development</li>
+                            <li>Creating educational content for ML implementation</li>
+                            <li>Tutorials and documentation development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CDAC HPC Intern -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="company-logo">CDAC</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>High Performance Computing Intern</h3>
+                                <p class="company">Centre for Development of Advanced Computing (CDAC) Pune</p>
+                            </div>
+                            <span class="period">Dec 2019 - Jan 2020 • 2 months</span>
+                        </div>
+                        <p class="experience-description">
+                            Worked on high-performance computing and deep learning projects, gaining hands-on experience with parallel programming and performance optimization.
+                        </p>
+                        <ul class="experience-highlights">
+                            <li>Parallel programming using OpenMP and MPI</li>
+                            <li>Performance analysis with Intel VTune Profiler and ITAC</li>
+                            <li>Deep learning and HPC optimization projects</li>
+                            <li>Computational technique optimization using Quantum Espresso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Competencies -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+
             <div class="skills-grid">
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
+                    <h3>Product Management</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Market Research</span>
+                        <span class="skill-tag">Product Strategy</span>
+                        <span class="skill-tag">Go-to-Market</span>
+                        <span class="skill-tag">Roadmapping</span>
+                        <span class="skill-tag">Requirements Definition</span>
+                        <span class="skill-tag">Competitive Analysis</span>
                     </div>
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Express, Go, GraphQL, REST APIs</p>
                 </div>
+
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-cloud"></i>
+                    <h3>AI & Technology</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">RAG Architecture</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">API Design</span>
+                        <span class="skill-tag">System Architecture</span>
                     </div>
-                    <h3>Cloud Computing</h3>
-                    <p>AWS, Docker, Kubernetes, Microservices</p>
                 </div>
+
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-code-branch"></i>
+                    <h3>Technical Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Distributed Systems</span>
+                        <span class="skill-tag">Event Streaming (Kafka)</span>
+                        <span class="skill-tag">Backend Development</span>
+                        <span class="skill-tag">HLD/LLD Design</span>
+                        <span class="skill-tag">Data Architecture</span>
+                        <span class="skill-tag">Networking</span>
                     </div>
-                    <h3>DevOps</h3>
-                    <p>CI/CD, Container Orchestration, Infrastructure as Code</p>
                 </div>
+
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
+                    <h3>Leadership & Community</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile Leadership</span>
+                        <span class="skill-tag">Cross-functional Teams</span>
+                        <span class="skill-tag">Community Building</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                        <span class="skill-tag">Public Speaking</span>
+                        <span class="skill-tag">Mentoring</span>
                     </div>
-                    <h3>Databases</h3>
-                    <p>PostgreSQL, MongoDB, Redis</p>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>Frontend</h3>
-                    <p>React.js, JavaScript, HTML/CSS</p>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Machine Learning</h3>
-                    <p>Data Analysis, ML Algorithms, Python</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- Education & Credentials -->
+    <section id="education" class="section education-section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/microservices.jpg" alt="Microservices Store">
-                        <div class="project-overlay">
-                            <a href="https://github.com/tripathyprateek/microservices-store" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
+            <h2 class="section-title">Education & Credentials</h2>
+
+            <div class="education-container">
+                <div class="education-main">
+                    <div class="education-item featured">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-content">
+                            <h3>MBA - Business Management</h3>
+                            <p class="institution">Xavier Institute of Management (XIMB), Bhubaneswar</p>
+                            <p class="period">2024 - 2026 (Current)</p>
+                            <p class="detail">Focus: Systems Business Transformation using AI, IT Strategy Design, B2B Marketing</p>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <h3>Microservices Store</h3>
-                        <p>E-commerce platform built with React.js and Node.js, featuring Docker and Kubernetes support for enhanced scalability and reliability.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Kubernetes</span>
+
+                    <div class="education-item">
+                        <div class="edu-icon"><i class="fas fa-book"></i></div>
+                        <div class="edu-content">
+                            <h3>Bachelor of Technology (B.Tech)</h3>
+                            <p class="institution">Veer Surendra Sai University of Technology (VSSUT), Burla</p>
+                            <p class="period">2018 - 2022</p>
+                            <p class="detail">CGPA: 75.60% | Recipient of Linux Foundation International Scholarship</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/shieldwalker.jpg" alt="ShieldWalker">
-                        <div class="project-overlay">
-                            <a href="https://github.com/tripathyprateek/ShieldWalker" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>ShieldWalker</h3>
-                        <p>Safety-focused web application using ML algorithms and Google Maps API to predict and suggest safer travel routes.</p>
-                        <div class="project-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">ML</span>
-                            <span class="tag">Maps API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/network cli.jpg" alt="Network CLI">
-                        <div class="project-overlay">
-                            <a href="https://github.com/tripathyprateek/Network-CLI" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Network-CLI</h3>
-                        <p>Lightweight network discovery client written in Go for finding nameservers, IP addresses, and CNAMEs without external dependencies.</p>
-                        <div class="project-tags">
-                            <span class="tag">Go</span>
-                            <span class="tag">CLI</span>
-                            <span class="tag">Networking</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card cta-card">
-                    <div class="project-image">
-                        <img src="images/github.jpg" alt="More Projects">
-                    </div>
-                    <div class="project-content">
-                        <h3>More Projects</h3>
-                        <p>Check out my GitHub profile for more exciting projects and open-source contributions!</p>
-                        <a href="https://github.com/tripathyprateek" target="_blank" class="btn btn-primary">
-                            View GitHub <i class="fas fa-arrow-right"></i>
+                <div class="certifications-section">
+                    <h3>Professional Certifications</h3>
+                    <div class="cert-grid">
+                        <a href="https://www.aha.io/" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Aha! Product Management</h4>
+                            <p>Professional Certificate</p>
+                            <span class="cert-date">Aug 2025</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://www.mckinsey.com/careers/discover-mckinsey/forward-program" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>McKinsey.org Forward</h4>
+                            <p>Forward Program</p>
+                            <span class="cert-date">Jul 2025</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://www.aws.amazon.com/training/awsacademy/cloud-foundations/" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>AWS Academy</h4>
+                            <p>Cloud Foundations</p>
+                            <span class="cert-date">Dec 2021</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Cisco CCNA</h4>
+                            <p>Introduction to Networks</p>
+                            <span class="cert-date">Jul 2021</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://www.sap.com/training/course/abap.html" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>SAP ABAP</h4>
+                            <p>Development Associate</p>
+                            <span class="cert-date">May 2021</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
+                        </a>
+                        <a href="https://www.linuxfoundation.org/" target="_blank" class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>Linux Foundation</h4>
+                            <p>Merit-based Scholarship</p>
+                            <span class="cert-date">Jun 2021</span>
+                            <span class="cert-link"><i class="fas fa-external-link-alt"></i></span>
                         </a>
                     </div>
                 </div>
@@ -253,118 +506,172 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- Awards & Recognition -->
+    <section id="awards" class="section awards-section">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-code"></i>
+            <h2 class="section-title">Awards & Recognition</h2>
+
+            <div class="awards-grid">
+                <div class="award-card featured">
+                    <div class="award-badge">
+                        <i class="fas fa-medal"></i>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Open Source Contributor</h3>
-                        <h4>Layer5</h4>
-                        <p class="timeline-date">September 2020 - March 2021</p>
-                        <p>
-                            Actively contributed to Layer5's open-source service mesh projects using JavaScript, Go, and GraphQL.
-                            Collaborated with global developers to enhance cloud-native infrastructure tools.
-                        </p>
+                    <div class="award-content">
+                        <h3>Prodalytics PM Case Competition</h3>
+                        <p class="award-issuer">XLRI Jamshedpur</p>
+                        <p class="award-date">Nov 2024</p>
+                        <p class="award-description">National winner of the prestigious product management case competition, competing against top MBA programs across India.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-briefcase"></i>
+                <div class="award-card">
+                    <div class="award-badge">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Fullstack Developer Intern</h3>
-                        <h4>NURSD LLC</h4>
-                        <p class="timeline-date">August 2020 - October 2020</p>
-                        <p>
-                            Developed application features using Apollo and PostgreSQL. Designed and implemented
-                            GraphQL APIs for workflow automation and data management.
-                        </p>
+                    <div class="award-content">
+                        <h3>Fidelity International Code Feast 1.0</h3>
+                        <p class="award-issuer">Fidelity International</p>
+                        <p class="award-date">Jul 2022</p>
+                        <p class="award-description">Green Award for developing a browser extension to estimate CO2 emissions from PC usage. Awarded PPO (Pre-Placement Offer).</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-brain"></i>
+                <div class="award-card">
+                    <div class="award-badge">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Intern</h3>
-                        <h4>Digital Tesseract</h4>
-                        <p class="timeline-date">May 2020 - June 2020</p>
-                        <p>
-                            Conducted data analysis and created educational machine learning content.
-                            Developed tutorials and documentation for ML implementation.
-                        </p>
+                    <div class="award-content">
+                        <h3>Credit Suisse Global Coding Challenge</h3>
+                        <p class="award-issuer">Credit Suisse</p>
+                        <p class="award-date">Nov 2021</p>
+                        <p class="award-description">Secured International Rank 84 out of 10,000+ participants in a competitive global coding challenge.</p>
                     </div>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-laptop-code"></i>
+                <div class="award-card">
+                    <div class="award-badge">
+                        <i class="fas fa-bookmark"></i>
                     </div>
-                    <div class="timeline-content">
-                        <h3>Machine Learning Intern</h3>
-                        <h4>CDAC Pune</h4>
-                        <p class="timeline-date">December 2019 - January 2020</p>
-                        <p>
-                            Developed parallel applications using OpenMP and MPI. Implemented machine learning
-                            models for image recognition projects.
-                        </p>
+                    <div class="award-content">
+                        <h3>Linux Foundation Scholarship</h3>
+                        <p class="award-issuer">Linux Foundation</p>
+                        <p class="award-date">Jun 2021</p>
+                        <p class="award-description">Merit-based international scholarship awarded among 500 individuals globally for technical excellence.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-badge">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>AlgoZenith Advanced Training</h3>
+                        <p class="award-issuer">AlgoZenith</p>
+                        <p class="award-date">May 2021</p>
+                        <p class="award-description">Completed intensive 16-week live training on Data Structures and Algorithms (AZ-201 course).</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-badge">
+                        <i class="fas fa-judge"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Hackathon Judge</h3>
+                        <p class="award-issuer">NW Hacks & Hack the Mountains</p>
+                        <p class="award-date">Jun 2021</p>
+                        <p class="award-description">Served as judge for major hackathon events, evaluating innovative solutions and providing technical feedback.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Community & Leadership -->
+    <section id="leadership" class="section leadership-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in hearing about new opportunities, collaborations, or just having a chat about technology.
+            <h2 class="section-title">Community & Leadership</h2>
+
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <div class="leadership-icon">🎯</div>
+                    <h3>X-SEED Coordinator</h3>
+                    <p class="role">Xavier Institute of Management - Entrepreneurship Cell</p>
+                    <p class="period">Mar 2025 - Present</p>
+                    <p class="description">
+                        Leading the entrepreneurship cell at XIMB, fostering innovation and startup thinking among MBA cohort. Organizing events, mentoring student entrepreneurs, and building startup ecosystem.
                     </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
+                </div>
+
+                <div class="leadership-card">
+                    <div class="leadership-icon">🌐</div>
+                    <h3>Community Manager - The Product Folks</h3>
+                    <p class="role">GrabChai Organizer</p>
+                    <p class="period">Feb 2025 - Present</p>
+                    <p class="description">
+                        Organizing GrabChai offline networking events across 15+ global cities, bringing together Product Managers and AI enthusiasts. Building a thriving community for knowledge sharing and collaboration.
+                    </p>
+                </div>
+
+                <div class="leadership-card">
+                    <div class="leadership-icon">📚</div>
+                    <h3>Training & Placement Officer</h3>
+                    <p class="role">Veer Surendra Sai University of Technology (VSSUT)</p>
+                    <p class="period">May 2022</p>
+                    <p class="description">
+                        Coordinated placement activities and career development initiatives for students, connecting talent with industry opportunities and building university-industry relationships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <p>
+                        I'm interested in conversations about product management, AI applications in enterprise, market strategy, and building exceptional product teams.
+                        Feel free to reach out via email or connect on professional networks.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:um24360@stu.xim.edu.in" class="contact-method">
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:tripathyprateek@gmail.com">tripathyprateek@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/tripathyprateek" target="_blank">github.com/tripathyprateek</a>
-                        </div>
-                        <div class="contact-item">
+                            <span>um24360@stu.xim.edu.in</span>
+                        </a>
+                        <a href="https://linkedin.com/in/tripathyprateek" target="_blank" class="contact-method">
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/tripathyprateek" target="_blank">linkedin.com/in/tripathyprateek</a>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/tripathyprateek" target="_blank" class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7008086467</span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" method="post" action="https://formsubmit.co/05231d6a678c00ca4ae884f711c9b09f">
-                        <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
+
+                <form class="contact-form" method="post" action="https://formsubmit.co/um24360@stu.xim.edu.in">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -373,21 +680,22 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Prateek Tripathy. All rights reserved.</p>
+                <p>Crafted with <span class="heart">♥</span> • 2025 Prateek Tripathy</p>
                 <div class="footer-links">
-                    <a href="https://github.com/tripathyprateek" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/prateekonmars" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/tripathyprateek" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/tripathyprateek" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:um24360@stu.xim.edu.in" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/notion-style.js"></script>
 </body>
 </html>
