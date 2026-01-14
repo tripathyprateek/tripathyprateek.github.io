@@ -1,0 +1,367 @@
+/* Footer Component - Man City Theme */
+
+/* =====================================
+   Top Decorative Border
+   ===================================== */
+.footer-top-border {
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--color-navy) 0%,
+        var(--color-sky) 35%,
+        var(--color-yellow) 65%,
+        var(--color-navy) 100%
+    );
+    position: relative;
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+body.dark .footer-top-border {
+    background: linear-gradient(90deg,
+        rgba(108, 173, 223, 0.3) 0%,
+        var(--color-sky) 50%,
+        rgba(230, 255, 0, 0.3) 100%
+    );
+}
+
+/* =====================================
+   Main Footer Container
+   ===================================== */
+.footer {
+    background-color: var(--color-navy);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+body.dark .footer {
+    background-color: #000306;
+}
+
+.footer-container {
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: var(--spacing-3xl) var(--container-padding) var(--spacing-2xl);
+}
+
+/* =====================================
+   Horizontal Three-Zone Layout
+   ===================================== */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark .footer-content {
+    border-bottom: 1px solid rgba(108, 173, 223, 0.1);
+}
+
+/* =====================================
+   LEFT ZONE: Brand Section
+   ===================================== */
+.footer-brand {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--color-sky), var(--color-yellow));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-extrabold);
+    font-family: var(--font-family-display);
+    color: var(--color-navy);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-base);
+}
+
+.footer-logo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.footer-tagline {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: var(--line-height-normal);
+    max-width: 250px;
+}
+
+body.dark .footer-tagline {
+    color: rgba(243, 246, 249, 0.8);
+}
+
+/* =====================================
+   CENTER ZONE: Enhanced Social Links
+   ===================================== */
+.footer-social {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.footer-social-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-yellow);
+    font-family: var(--font-family-display);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.footer-social-link {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient background on hover */
+.footer-social-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--color-sky), var(--color-yellow));
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    z-index: 0;
+}
+
+.footer-social-link:hover::before {
+    opacity: 1;
+}
+
+.footer-social-link svg {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    z-index: 1;
+    transition: all var(--transition-base);
+}
+
+.footer-social-link:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(108, 173, 223, 0.4);
+}
+
+.footer-social-link:hover svg {
+    color: var(--color-navy);
+    transform: rotate(5deg) scale(1.1);
+}
+
+body.dark .footer-social-link {
+    background-color: rgba(108, 173, 223, 0.1);
+}
+
+body.dark .footer-social-link:hover {
+    box-shadow: 0 8px 16px rgba(108, 173, 223, 0.3);
+}
+
+/* =====================================
+   RIGHT ZONE: Contact Information
+   ===================================== */
+.footer-contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: flex-end;
+    text-align: right;
+    animation: fadeInRight 0.8s ease-out 0.4s backwards;
+}
+
+.footer-contact-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-sky);
+    font-family: var(--font-family-display);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.footer-contact-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    transition: all var(--transition-base);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+}
+
+.footer-contact-link svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-yellow);
+    transition: all var(--transition-fast);
+}
+
+.footer-contact-link:hover {
+    color: var(--color-yellow);
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateX(-4px);
+}
+
+.footer-contact-link:hover svg {
+    transform: scale(1.15) rotate(5deg);
+}
+
+body.dark .footer-contact-link {
+    color: rgba(243, 246, 249, 0.9);
+}
+
+body.dark .footer-contact-link:hover {
+    color: var(--color-yellow);
+    background-color: rgba(108, 173, 223, 0.05);
+}
+
+/* =====================================
+   Footer Bottom
+   ===================================== */
+.footer-bottom {
+    text-align: center;
+    padding-top: var(--spacing-xl);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-sm);
+}
+
+body.dark .footer-bottom {
+    color: rgba(243, 246, 249, 0.6);
+}
+
+/* =====================================
+   Responsive Design
+   ===================================== */
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .footer-content {
+        gap: var(--spacing-2xl);
+    }
+
+    .footer-contact {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-contact-link {
+        flex-direction: row;
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--spacing-2xl);
+    }
+
+    .footer-brand {
+        align-items: center;
+    }
+
+    .footer-tagline {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .footer-social {
+        align-items: center;
+    }
+
+    .footer-contact {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact-link:hover {
+        transform: translateY(-2px);
+    }
+
+    .footer-logo {
+        width: 70px;
+        height: 70px;
+        font-size: var(--font-size-3xl);
+    }
+
+    .footer-social-links {
+        gap: var(--spacing-md);
+    }
+
+    .footer-social-link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .footer-social-link svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .footer-container {
+        padding: var(--spacing-2xl) var(--spacing-md) var(--spacing-xl);
+    }
+
+    .footer-content {
+        gap: var(--spacing-xl);
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-social-link {
+        width: 44px;
+        height: 44px;
+    }
+}

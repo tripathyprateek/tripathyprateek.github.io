@@ -1,0 +1,152 @@
+/* Typography Styles - Man City Theme */
+
+/* =====================================
+   Section Titles
+   ===================================== */
+.section-title {
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-4xl); /* 3rem / 48px */
+    font-weight: var(--font-weight-extrabold);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+}
+
+/* Dark mode gradient effect for section titles */
+body.dark .section-title {
+    background: linear-gradient(135deg, var(--color-sky), var(--color-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =====================================
+   Headings
+   ===================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-display);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: var(--font-size-5xl); /* 3.5rem / 56px */
+    font-weight: var(--font-weight-extrabold);
+}
+
+h2 {
+    font-size: var(--font-size-4xl); /* 3rem / 48px */
+}
+
+h3 {
+    font-size: var(--font-size-3xl); /* 2.5rem / 40px */
+}
+
+h4 {
+    font-size: var(--font-size-2xl); /* 2rem / 32px */
+}
+
+h5 {
+    font-size: var(--font-size-xl); /* 1.5rem / 24px */
+}
+
+h6 {
+    font-size: var(--font-size-lg); /* 1.125rem / 18px */
+}
+
+/* =====================================
+   Body Text
+   ===================================== */
+p {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-md);
+}
+
+/* =====================================
+   Links
+   ===================================== */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+a:focus {
+    outline: 2px solid var(--color-sky);
+    outline-offset: 2px;
+}
+
+/* =====================================
+   Text Utilities
+   ===================================== */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.text-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.text-light {
+    font-weight: var(--font-weight-light);
+}
+
+.text-sm {
+    font-size: var(--font-size-sm);
+}
+
+.text-lg {
+    font-size: var(--font-size-lg);
+}
+
+.text-xl {
+    font-size: var(--font-size-xl);
+}
+
+/* =====================================
+   Responsive Typography
+   ===================================== */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: var(--font-size-3xl); /* 2rem / 32px on mobile */
+    }
+
+    h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h4 {
+        font-size: var(--font-size-xl);
+    }
+}

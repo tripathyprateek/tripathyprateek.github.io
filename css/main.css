@@ -1,0 +1,104 @@
+/*
+ * Main CSS - Man City Portfolio Theme
+ * Author: Prateek Tripathy
+ * Description: Modular CSS architecture with Man City-inspired design
+ *
+ * Architecture: ITCSS-inspired (Inverted Triangle CSS)
+ * - Base: Variables, resets, typography
+ * - Components: Reusable UI components
+ * - Sections: Page-specific sections
+ * - Utilities: Helper classes and animations
+ */
+
+/* =====================================
+   BASE LAYER
+   CSS Variables, Resets, Typography
+   ===================================== */
+
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* =====================================
+   COMPONENTS LAYER
+   Reusable UI Components
+   ===================================== */
+
+@import './components/navbar.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/carousel.css';
+@import './components/footer.css';
+
+/* =====================================
+   SECTIONS LAYER
+   Page-specific Sections
+   ===================================== */
+
+@import './sections/hero.css';
+@import './sections/about.css';
+@import './sections/case-studies.css';
+@import './sections/experience.css';
+@import './sections/skills.css';
+@import './sections/toolbelt.css';
+@import './sections/awards.css';
+@import './sections/education.css';
+@import './sections/contact.css';
+
+/* =====================================
+   UTILITIES LAYER
+   Helper Classes, Animations, Responsive
+   ===================================== */
+
+@import './utilities/animations.css';
+@import './utilities/responsive.css';
+@import './utilities/dark-mode.css';
+
+/* =====================================
+   GLOBAL OVERRIDES
+   Any final adjustments
+   ===================================== */
+
+/* Ensure smooth rendering */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Social Links (Hero Section) */
+.social-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.social-link:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    transform: translateY(-2px);
+}
+
+/* Utility: Full height */
+.full-height {
+    min-height: 100vh;
+}
+
+/* Utility: Centered content */
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,125 @@
+/* CSS Custom Properties - Man City Design System */
+
+:root {
+    /* =====================================
+       Man City Brand Colors
+       ===================================== */
+    --color-navy: #001838;
+    --color-sky: #6CADDF;
+    --color-yellow: #E6FF00;
+    --color-slate: #F3F6F9;
+    --color-dark-bg: #000306;
+    --color-white: #FFFFFF;
+
+    /* Semantic Colors */
+    --color-primary: var(--color-sky);
+    --color-secondary: var(--color-yellow);
+    --color-accent: var(--color-navy);
+    --color-text: var(--color-navy);
+    --color-text-secondary: rgba(0, 24, 56, 0.7);
+    --color-background: var(--color-slate);
+
+    /* =====================================
+       Shadows - Man City Style
+       ===================================== */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
+    --shadow-highlight: 0 4px 0 rgba(0, 0, 0, 0.2); /* Man City signature shadow */
+
+    /* =====================================
+       Spacing Scale (based on 0.25rem = 4px)
+       ===================================== */
+    --spacing-xs: 0.25rem;    /* 4px */
+    --spacing-sm: 0.5rem;     /* 8px */
+    --spacing-md: 1rem;       /* 16px */
+    --spacing-lg: 1.5rem;     /* 24px */
+    --spacing-xl: 2rem;       /* 32px */
+    --spacing-2xl: 3rem;      /* 48px */
+    --spacing-3xl: 4rem;      /* 64px */
+    --spacing-4xl: 5rem;      /* 80px */
+    --spacing-5xl: 6rem;      /* 96px */
+
+    /* =====================================
+       Typography Scale
+       ===================================== */
+    --font-family-primary: 'Inter', sans-serif;
+    --font-family-display: 'Barlow Condensed', sans-serif;
+
+    --font-size-xs: 0.75rem;      /* 12px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-lg: 1.125rem;     /* 18px */
+    --font-size-xl: 1.5rem;       /* 24px */
+    --font-size-2xl: 2rem;        /* 32px */
+    --font-size-3xl: 2.5rem;      /* 40px */
+    --font-size-4xl: 3rem;        /* 48px */
+    --font-size-5xl: 3.5rem;      /* 56px */
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.8;
+
+    /* =====================================
+       Transitions & Animations
+       ===================================== */
+    --transition-fast: 0.15s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.6s ease;
+
+    --easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+    --easing-in: cubic-bezier(0.4, 0, 1, 1);
+    --easing-out: cubic-bezier(0, 0, 0.2, 1);
+    --easing-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* =====================================
+       Border Radius
+       ===================================== */
+    --radius-none: 0;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-full: 9999px;
+
+    /* =====================================
+       Layout & Grid
+       ===================================== */
+    --max-width-content: 1200px;
+    --max-width-wide: 1400px;
+    --navbar-height: 80px;
+    --container-padding: 2rem;
+
+    /* =====================================
+       Z-index Scale
+       ===================================== */
+    --z-base: 1;
+    --z-dropdown: 10;
+    --z-sticky: 100;
+    --z-fixed: 500;
+    --z-modal-backdrop: 900;
+    --z-modal: 1000;
+    --z-popover: 1100;
+    --z-tooltip: 1200;
+}
+
+/* =====================================
+   Dark Mode Variables
+   ===================================== */
+:root.dark {
+    --color-navy: #F3F6F9;
+    --color-slate: #001838;
+    --color-dark-bg: #000306;
+    --color-text: var(--color-slate);
+    --color-text-secondary: rgba(243, 246, 249, 0.7);
+    --color-background: var(--color-dark-bg);
+}

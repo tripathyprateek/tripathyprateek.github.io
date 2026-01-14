@@ -1,0 +1,96 @@
+/* Form Components - Man City Theme */
+
+/* =====================================
+   Contact Form Container
+   ===================================== */
+.contact-form {
+    background-color: white;
+    border-radius: var(--radius-md);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-md);
+}
+
+body.dark .contact-form {
+    background-color: #001838;
+}
+
+/* =====================================
+   Form Elements
+   ===================================== */
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-label {
+    display: block;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-navy);
+}
+
+body.dark .form-label {
+    color: var(--color-slate);
+}
+
+/* =====================================
+   Input & Textarea Styles
+   ===================================== */
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid rgba(108, 173, 223, 0.3);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    transition: all var(--transition-base);
+    background-color: var(--color-slate);
+    color: var(--color-navy);
+}
+
+body.dark .form-input,
+body.dark .form-textarea {
+    background-color: #000306;
+    color: var(--color-slate);
+    border-color: rgba(108, 173, 223, 0.2);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--color-sky);
+    box-shadow: 0 0 0 3px rgba(108, 173, 223, 0.1);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* =====================================
+   Form Validation States
+   ===================================== */
+.form-input.error,
+.form-textarea.error {
+    border-color: #ef4444;
+}
+
+.form-input.success,
+.form-textarea.success {
+    border-color: #22c55e;
+}
+
+.form-error-message {
+    color: #ef4444;
+    font-size: var(--font-size-sm);
+    margin-top: var(--spacing-xs);
+}
+
+/* =====================================
+   Responsive Forms
+   ===================================== */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: var(--spacing-lg);
+    }
+}

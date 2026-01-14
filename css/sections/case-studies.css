@@ -1,0 +1,121 @@
+/* ============================================
+   Case Studies Section Styles
+   ============================================ */
+
+/* Case Studies */
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.case-study-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s;
+}
+
+body.dark .case-study-card {
+    background-color: #001838;
+}
+
+.case-study-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.case-study-header {
+    background-color: var(--color-sky);
+    color: white;
+    padding: 1.5rem;
+}
+
+.case-study-header.accent {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+}
+
+.case-study-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.case-study-body {
+    padding: 2rem;
+}
+
+.case-study-section {
+    margin-bottom: 1.5rem;
+}
+
+.case-study-section h4 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-sky);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.impact-item {
+    text-align: center;
+}
+
+.impact-value {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-yellow);
+}
+
+.impact-label {
+    font-size: 0.75rem;
+    color: var(--color-navy);
+    opacity: 0.7;
+}
+
+body.dark .impact-label {
+    color: var(--color-slate);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    background-color: rgba(108, 173, 223, 0.1);
+    color: var(--color-sky);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    border: 1px solid var(--color-sky);
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+}
