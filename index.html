@@ -1,34 +1,991 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Prateek Tripathy - Product Manager | AI Strategist | Systems Thinker. MBA at XIMB, IBM Product Manager Intern with expertise in GenAI, RAG, and B2B SaaS." />
     <meta name="keywords" content="Product Manager, AI, IBM, MBA, XIMB, GenAI, RAG, Agentic AI, B2B SaaS" />
     <meta name="author" content="Prateek Tripathy" />
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Prateek Tripathy - Product Manager & AI Strategist" />
     <meta property="og:description" content="Product Manager with deep expertise in AI product strategy. IBM PM Intern | MBA at XIMB | Building the future of AI-powered products." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tripathyprateek.github.io" />
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@prateekonmars" />
     <meta name="twitter:title" content="Prateek Tripathy - Product Manager & AI Strategist" />
     <meta name="twitter:description" content="Product Manager with deep expertise in AI product strategy. IBM PM Intern | MBA at XIMB" />
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
     <title>Prateek Tripathy - Product Manager & AI Strategist</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- P letter with Anthropic-style design -->
+                    <path d="M8 32V8h8.5c3.5 0 6.3 2.8 6.3 6.3 0 3.5-2.8 6.3-6.3 6.3H12v11.4H8zm4-15.4h4.5c1.4 0 2.3-.9 2.3-2.3s-.9-2.3-2.3-2.3H12v4.6z" fill="currentColor"/>
+                    <!-- T letter -->
+                    <path d="M26 12h10v4h-3v16h-4V16h-3v-4z" fill="currentColor"/>
+                    <!-- Decorative dots (Anthropic-style) -->
+                    <circle cx="42" cy="20" r="2" fill="#E6FF00"/>
+                    <circle cx="48" cy="20" r="2" fill="#6CADDF"/>
+                    <circle cx="54" cy="20" r="2" fill="#E6FF00"/>
+                    <!-- Text -->
+                    <text x="60" y="25" font-family="Barlow Condensed, sans-serif" font-size="14" font-weight="700" fill="currentColor">PRATEEK TRIPATHY</text>
+                </svg>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#case-studies" class="nav-link">Work</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <a href="/resume.pdf" class="btn-resume" download>Resume</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#case-studies" class="mobile-nav-link">Work</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#awards" class="mobile-nav-link">Awards</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-subtitle">Hello, I'm</div>
+                <h1>Prateek Tripathy</h1>
+                <div class="typewriter" id="typewriter"></div>
+
+                <div class="open-to-work">
+                    <span class="pulse-dot"></span>
+                    <span>Open to Product Manager roles</span>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">$2B</div>
+                        <div class="stat-label">Market Opportunity</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">35%</div>
+                        <div class="stat-label">API Improvement</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Global Events</div>
+                    </div>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#case-studies" class="btn-primary">View Case Studies</a>
+                    <a href="https://linkedin.com/in/tripathyprateek" class="btn-linkedin" target="_blank">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/tripathyprateek" class="social-link" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://twitter.com/prateekonmars" class="social-link" target="_blank" aria-label="Twitter">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                    <a href="mailto:tripathyprateek@gmail.com" class="social-link" aria-label="Email">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-gradient"></div>
+                    <img src="/images/profile.jpg" alt="Prateek Tripathy" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Product Manager with deep technical roots and AI expertise</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="story-card">
+                <h3>IBM Experience</h3>
+                <p>As a Product Manager Intern at IBM, I identified a $2B market opportunity in Network Intelligence, designed a GenAI-powered product strategy integrating RAG, Agentic AI, and MCP, and orchestrated cross-product collaboration across three IBM platforms.</p>
+            </div>
+            <div class="story-card">
+                <h3>Infosys Background</h3>
+                <p>With 25+ months as a Specialist Programmer at Infosys, I led the adoption of Apache Kafka to reduce response latency by 75%, optimized REST APIs improving performance by 35%, and managed cross-functional teams in an Agile environment.</p>
+            </div>
+        </div>
+
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <div class="highlight-icon">⚡</div>
+                <div class="highlight-title">Technical Depth</div>
+                <p>API design, Kafka, Spring Boot, and deep system architecture knowledge driving product decisions</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🌐</div>
+                <div class="highlight-title">Community Leader</div>
+                <p>Organized 15+ GrabChai events across global cities, building PM communities worldwide</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🏆</div>
+                <div class="highlight-title">Award Winner</div>
+                <p>National winner at Prodalytics PM case competition at XLRI, featured for excellence</p>
+            </div>
+            <div class="highlight-card">
+                <div class="highlight-icon">🤖</div>
+                <div class="highlight-title">AI Product Strategy</div>
+                <p>Identified $2B market opportunity with GenAI, RAG, and Agentic AI integration at IBM</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">What I Bring</h3>
+            <ul class="value-props">
+                <li class="value-prop">Technical + Business mindset from development to product management</li>
+                <li class="value-prop">Deep AI/ML expertise with hands-on GenAI, RAG, and Agentic AI experience</li>
+                <li class="value-prop">Entrepreneurial drive building communities and startup ecosystems</li>
+                <li class="value-prop">Quantifiable impact: $2B opportunities, 75% latency reduction, 35% API improvements</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section" id="case-studies">
+        <div class="section-header">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Product management work that drove measurable impact</p>
+        </div>
+
+        <div class="case-studies-grid">
+            <!-- Case Study 1: IBM -->
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <div class="case-study-title">Network Intelligence Discovery</div>
+                    <div class="case-study-meta">
+                        <span>IBM</span>
+                        <span>2024</span>
+                    </div>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-study-section">
+                        <h4>Role</h4>
+                        <p>Product Manager Intern</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Challenge</h4>
+                        <p>Enterprise network management was fragmented across multiple IBM products with no unified intelligence layer, creating operational inefficiencies and missed cross-sell opportunities.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Solution</h4>
+                        <p>Designed an AI-driven network correlation framework integrating RAG for knowledge retrieval, ETL pipelines for data unification, MCP for multi-product orchestration, and Agentic AI for autonomous decision-making.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Impact</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <div class="impact-value">$2B</div>
+                                <div class="impact-label">Market Opportunity</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">New</div>
+                                <div class="impact-label">Product Created</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">3</div>
+                                <div class="impact-label">Products Integrated</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Market Research</span>
+                        <span class="tag">AI Product Strategy</span>
+                        <span class="tag">Technical Architecture</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2: Infosys -->
+            <div class="case-study-card">
+                <div class="case-study-header accent">
+                    <div class="case-study-title">Backend Performance Optimization</div>
+                    <div class="case-study-meta">
+                        <span>Infosys</span>
+                        <span>2022-23</span>
+                    </div>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-study-section">
+                        <h4>Role</h4>
+                        <p>Specialist Programmer (Technical PM)</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Challenge</h4>
+                        <p>Legacy REST APIs faced critical latency issues with 2-second average response times, impacting user experience and system scalability for a major client application.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Solution</h4>
+                        <p>Led Apache Kafka adoption for event-driven architecture, redesigned API endpoints with optimized data models, implemented caching strategies, and established performance monitoring dashboards.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Impact</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <div class="impact-value">75%</div>
+                                <div class="impact-label">Latency Reduction</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">35%</div>
+                                <div class="impact-label">API Performance</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">3</div>
+                                <div class="impact-label">Teams Led</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Technical PM</span>
+                        <span class="tag">Performance Optimization</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">API Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 3: X-SEED -->
+            <div class="case-study-card">
+                <div class="case-study-header">
+                    <div class="case-study-title">X-SEED Startup Ecosystem</div>
+                    <div class="case-study-meta">
+                        <span>XIMB</span>
+                        <span>2024-25</span>
+                    </div>
+                </div>
+                <div class="case-study-body">
+                    <div class="case-study-section">
+                        <h4>Role</h4>
+                        <p>Co-Coordinator</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Challenge</h4>
+                        <p>Limited collaboration between MBA students and startups, with no structured platform for experiential learning through real-world product and business challenges.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Solution</h4>
+                        <p>Built partnership program connecting startups with student talent, designed project frameworks for product strategy, market research, and go-to-market initiatives, organized pitch events and mentorship sessions.</p>
+                    </div>
+                    <div class="case-study-section">
+                        <h4>Impact</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <div class="impact-value">15+</div>
+                                <div class="impact-label">Live Projects</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">Growing</div>
+                                <div class="impact-label">Ecosystem</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-value">Multiple</div>
+                                <div class="impact-label">Events</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Platform Strategy</span>
+                        <span class="tag">Community Building</span>
+                        <span class="tag">Program Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">From development to product management</p>
+        </div>
+
+        <div class="experience-timeline">
+            <!-- Experience 1: IBM -->
+            <div class="experience-item">
+                <div class="experience-marker"></div>
+                <div class="experience-content">
+                    <div class="experience-title">Product Manager Intern</div>
+                    <div class="experience-company">IBM</div>
+                    <div class="experience-period">Apr 2025 - Jun 2025</div>
+                    <ul class="experience-highlights">
+                        <li>Identified $2B AI market opportunity in Network Intelligence</li>
+                        <li>Designed GenAI-powered product strategy with RAG, MCP, and Agentic AI</li>
+                        <li>Established cross-product metrics framework across 3 IBM products</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Product Management</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Market Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2: Infosys -->
+            <div class="experience-item">
+                <div class="experience-marker accent"></div>
+                <div class="experience-content">
+                    <div class="experience-title">Specialist Programmer</div>
+                    <div class="experience-company">Infosys</div>
+                    <div class="experience-period">Jun 2022 - Jul 2024</div>
+                    <ul class="experience-highlights">
+                        <li>Optimized REST APIs, improving performance by 35%</li>
+                        <li>Led Apache Kafka adoption, reducing response latency by 75%</li>
+                        <li>Managed cross-functional teams in Agile environment</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Full-Stack Dev</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Kafka</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3: GrabChai -->
+            <div class="experience-item">
+                <div class="experience-marker"></div>
+                <div class="experience-content">
+                    <div class="experience-title">Community Manager</div>
+                    <div class="experience-company">The Product Folks / GrabChai</div>
+                    <div class="experience-period">Feb 2025 - Present</div>
+                    <ul class="experience-highlights">
+                        <li>Organized 15+ PM meetups across global cities</li>
+                        <li>Built thriving product management community</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Community</span>
+                        <span class="tag">Events</span>
+                        <span class="tag">Networking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 4: X-SEED -->
+            <div class="experience-item">
+                <div class="experience-marker accent"></div>
+                <div class="experience-content">
+                    <div class="experience-title">Co-Coordinator, X-SEED</div>
+                    <div class="experience-company">XIMB</div>
+                    <div class="experience-period">Mar 2025 - Present</div>
+                    <ul class="experience-highlights">
+                        <li>Fostered innovation through startup-student collaboration</li>
+                        <li>Built thriving entrepreneurship ecosystem</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Leadership</span>
+                        <span class="tag">Entrepreneurship</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 5: Airblack -->
+            <div class="experience-item">
+                <div class="experience-marker"></div>
+                <div class="experience-content">
+                    <div class="experience-title">SDE Intern</div>
+                    <div class="experience-company">Airblack</div>
+                    <div class="experience-period">Feb 2022 - Jul 2022</div>
+                    <ul class="experience-highlights">
+                        <li>Developed backend systems and REST APIs</li>
+                        <li>Contributed to scalable architecture design</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Backend</span>
+                        <span class="tag">API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">From strategy to execution</p>
+        </div>
+
+        <div class="skills-tabs">
+            <button class="skill-tab active" data-category="strategic">Strategic Thinking</button>
+            <button class="skill-tab" data-category="technical">Technical PM</button>
+            <button class="skill-tab" data-category="execution">Execution</button>
+            <button class="skill-tab" data-category="data">Data & Analytics</button>
+        </div>
+
+        <div class="skills-content active" data-category="strategic">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Market Research & Competitive Analysis</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Product Strategy & Roadmapping</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Go-to-Market Planning</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Opportunity Identification</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-content" data-category="technical">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">AI/ML Product Strategy (GenAI, RAG)</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">API Design & Architecture</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Distributed Systems (Kafka)</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">HLD/LLD Documentation</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-content" data-category="execution">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Agile Leadership</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Cross-functional Management</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Requirements & User Stories</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Stakeholder Management</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-content" data-category="data">
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Product Metrics & KPIs</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">Data-Driven Decisions</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">A/B Testing</span>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span class="skill-name">BI & Reporting</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PM Toolbelt Section -->
+    <section class="section" id="toolbelt">
+        <div class="section-header">
+            <h2 class="section-title">PM Toolbelt</h2>
+            <p class="section-subtitle">Tools and frameworks I work with</p>
+        </div>
+
+        <div class="toolbelt-grid">
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">🎯</div>
+                    <div class="tool-title">Product Management</div>
+                </div>
+                <ul class="tool-list">
+                    <li>JIRA</li>
+                    <li>Aha!</li>
+                    <li>ProductBoard</li>
+                    <li>Figma</li>
+                    <li>Miro</li>
+                    <li>Notion</li>
+                </ul>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header yellow">
+                    <div class="tool-icon">📊</div>
+                    <div class="tool-title">Data & Analytics</div>
+                </div>
+                <ul class="tool-list">
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Tableau</li>
+                    <li>Google Analytics</li>
+                    <li>Excel</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header navy">
+                    <div class="tool-icon">🧩</div>
+                    <div class="tool-title">Frameworks</div>
+                </div>
+                <ul class="tool-list">
+                    <li>Jobs-to-be-Done</li>
+                    <li>OKRs</li>
+                    <li>RICE</li>
+                    <li>Lean Canvas</li>
+                    <li>Design Thinking</li>
+                    <li>Scrum</li>
+                </ul>
+            </div>
+
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">💻</div>
+                    <div class="tool-title">Development</div>
+                </div>
+                <ul class="tool-list">
+                    <li>Git</li>
+                    <li>Agile/Scrum</li>
+                    <li>API Design</li>
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section" id="awards">
+        <div class="section-header">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <p class="section-subtitle">Milestones and achievements</p>
+        </div>
+
+        <div class="awards-container">
+            <!-- Desktop Grid -->
+            <div class="awards-grid">
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">🏆</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Prodalytics PM Case Competition</div>
+                        <div class="award-issuer">XLRI</div>
+                        <div class="award-date">Nov 2024</div>
+                        <p>National winner in premier PM case competition. Featured for solving complex product challenges.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">🌱</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Fidelity Code Feast 1.0</div>
+                        <div class="award-issuer">Fidelity Investments</div>
+                        <div class="award-date">Jul 2022</div>
+                        <p>Green Award for building CO2 footprint reduction browser extension. PPO awarded for impact.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">🌍</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Global Coding Challenge</div>
+                        <div class="award-issuer">Credit Suisse</div>
+                        <div class="award-date">Nov 2021</div>
+                        <p>International Rank 84 out of 10,000+ participants worldwide. Problem-solving excellence.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">🎓</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Linux Foundation Scholarship</div>
+                        <div class="award-issuer">Linux Foundation</div>
+                        <div class="award-date">Jun 2021</div>
+                        <p>Merit-based scholarship. One of 500 selected globally for open-source excellence.</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">⚖️</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Hackathon Judge</div>
+                        <div class="award-issuer">NW Hacks & Hack the Mountains</div>
+                        <div class="award-date">Jun 2021</div>
+                        <p>Evaluated innovative tech solutions. Mentored teams on product thinking and execution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Carousel -->
+            <div class="awards-carousel">
+                <div class="award-card">
+                    <div class="award-header">
+                        <div class="award-icon">🏆</div>
+                    </div>
+                    <div class="award-body">
+                        <div class="award-title">Prodalytics PM Case Competition</div>
+                        <div class="award-issuer">XLRI</div>
+                        <div class="award-date">Nov 2024</div>
+                        <p>National winner in premier PM case competition. Featured for solving complex product challenges.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevAward" aria-label="Previous award">←</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+                <button class="carousel-btn" id="nextAward" aria-label="Next award">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section" id="education">
+        <div class="section-header">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic background and certifications</p>
+        </div>
+
+        <div class="education-grid">
+            <div class="education-list">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Education</h3>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-degree">MBA - Business Management</div>
+                    <div class="education-institution">Xavier Institute of Management, Bhubaneswar</div>
+                    <div class="education-period">2024 - 2026 (Current)</div>
+                    <p><strong>Focus:</strong> Systems Business Transformation using AI, IT Strategy, B2B Marketing</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-degree">B.Tech</div>
+                    <div class="education-institution">VSSUT Burla</div>
+                    <div class="education-period">2018 - 2022</div>
+                    <p><strong>CGPA:</strong> 75.60% | Linux Foundation Scholar</p>
+                </div>
+            </div>
+
+            <div>
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Certifications</h3>
+
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="certification-name">Aha! Product Management</div>
+                        <div class="certification-date">Aug 2025</div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-name">McKinsey Forward</div>
+                        <div class="certification-date">Jul 2025</div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-name">AWS Academy</div>
+                        <div class="certification-date">Dec 2021</div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-name">Cisco CCNA</div>
+                        <div class="certification-date">Jul 2021</div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-name">SAP ABAP</div>
+                        <div class="certification-date">May 2021</div>
+                    </div>
+                    <div class="certification-card">
+                        <div class="certification-name">Linux Foundation</div>
+                        <div class="certification-date">Jun 2021</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss product opportunities</p>
+        </div>
+
+        <div class="contact-grid">
+            <div>
+                <div class="contact-methods">
+                    <a href="mailto:tripathyprateek@gmail.com" class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">Email</div>
+                            <div style="font-size: 0.875rem;">tripathyprateek@gmail.com</div>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/tripathyprateek" class="contact-method" target="_blank">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">LinkedIn</div>
+                            <div style="font-size: 0.875rem;">linkedin.com/in/tripathyprateek</div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/tripathyprateek" class="contact-method" target="_blank">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">GitHub</div>
+                            <div style="font-size: 0.875rem;">github.com/tripathyprateek</div>
+                        </div>
+                    </a>
+
+                    <a href="tel:+917008086467" class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 0.25rem;">Phone</div>
+                            <div style="font-size: 0.875rem;">+91 7008086467</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="contact-cta">
+                    <a href="/resume.pdf" class="btn-primary" download>Download Resume</a>
+                    <a href="https://linkedin.com/in/tripathyprateek" class="btn-secondary" target="_blank">Connect on LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Top decorative border with Man City gradient -->
+        <div class="footer-top-border"></div>
+
+        <div class="footer-container">
+            <div class="footer-content">
+
+                <!-- LEFT ZONE: Brand Identity -->
+                <div class="footer-brand">
+                    <div class="footer-logo">PT</div>
+                    <p class="footer-tagline">Product Manager | AI Strategist | Systems Thinker</p>
+                </div>
+
+                <!-- CENTER ZONE: Social Media Links -->
+                <div class="footer-social">
+                    <h4 class="footer-social-title">Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://linkedin.com/in/tripathyprateek" class="footer-social-link" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://github.com/tripathyprateek" class="footer-social-link" target="_blank" aria-label="GitHub">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/prateekonmars" class="footer-social-link" target="_blank" aria-label="Twitter">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                        <a href="mailto:tripathyprateek@gmail.com" class="footer-social-link" aria-label="Email">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT ZONE: Contact Information -->
+                <div class="footer-contact">
+                    <h4 class="footer-contact-title">Get in Touch</h4>
+                    <div class="footer-contact-info">
+                        <a href="mailto:tripathyprateek@gmail.com" class="footer-contact-link">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                            <span>tripathyprateek@gmail.com</span>
+                        </a>
+                        <a href="tel:+917008086467" class="footer-contact-link">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg>
+                            <span>+91 7008086467</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom: Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prateek Tripathy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
 </html>

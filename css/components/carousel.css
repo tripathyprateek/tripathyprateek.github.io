@@ -1,0 +1,101 @@
+/* Carousel Component - Man City Theme */
+
+/* =====================================
+   Carousel Controls
+   ===================================== */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+}
+
+/* =====================================
+   Carousel Buttons
+   ===================================== */
+.carousel-btn {
+    background-color: var(--color-sky);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    transform: scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* =====================================
+   Carousel Dots (Indicators)
+   ===================================== */
+.carousel-dots {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-full);
+    background-color: rgba(108, 173, 223, 0.3);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    border: none;
+    padding: 0;
+}
+
+.carousel-dot:hover {
+    background-color: rgba(108, 173, 223, 0.5);
+}
+
+.carousel-dot.active {
+    background-color: var(--color-sky);
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* =====================================
+   Carousel Container (for future use)
+   ===================================== */
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform var(--transition-slow);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity var(--transition-base);
+}
+
+/* =====================================
+   Responsive Carousel
+   ===================================== */
+@media (max-width: 768px) {
+    .carousel-btn {
+        width: 36px;
+        height: 36px;
+    }
+}

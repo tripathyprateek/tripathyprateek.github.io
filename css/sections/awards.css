@@ -1,0 +1,123 @@
+/* ============================================
+   Awards Section Styles
+   ============================================ */
+
+/* Awards Section */
+.awards-container {
+    position: relative;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.award-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+body.dark .award-card {
+    background-color: #001838;
+}
+
+.award-header {
+    background-color: var(--color-sky);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.award-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.award-body {
+    padding: 1.5rem;
+}
+
+.award-title {
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-navy);
+}
+
+body.dark .award-title {
+    color: var(--color-slate);
+}
+
+.award-issuer {
+    color: var(--color-sky);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.award-date {
+    font-size: 0.875rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+}
+
+.awards-carousel {
+    display: none;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.carousel-btn {
+    background-color: var(--color-sky);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(108, 173, 223, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.carousel-dot.active {
+    background-color: var(--color-sky);
+    width: 30px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+    .awards-grid {
+        display: none;
+    }
+
+    .awards-carousel {
+        display: block;
+    }
+}

@@ -1,0 +1,195 @@
+/* Dark Mode Utilities - Man City Theme */
+
+/* =====================================
+   Global Dark Mode Overrides
+   ===================================== */
+
+/* Body Dark Mode */
+body.dark {
+    background-color: var(--color-dark-bg);
+    color: var(--color-slate);
+}
+
+/* Links in Dark Mode */
+body.dark a {
+    color: var(--color-sky);
+}
+
+body.dark a:hover {
+    color: var(--color-yellow);
+}
+
+/* =====================================
+   Common Element Dark Mode Styles
+   ===================================== */
+
+/* Headings */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6 {
+    color: var(--color-slate);
+}
+
+/* Paragraphs */
+body.dark p {
+    color: rgba(243, 246, 249, 0.9);
+}
+
+/* =====================================
+   Component Dark Mode Overrides
+   ===================================== */
+
+/* Cards */
+body.dark .card,
+body.dark .story-card,
+body.dark .highlight-card,
+body.dark .case-study-card,
+body.dark .award-card,
+body.dark .testimonial-card,
+body.dark .project-card,
+body.dark .blog-card {
+    background-color: #001838;
+}
+
+/* Forms */
+body.dark .contact-form {
+    background-color: #001838;
+}
+
+body.dark .form-label {
+    color: var(--color-slate);
+}
+
+body.dark .form-input,
+body.dark .form-textarea {
+    background-color: #000306;
+    color: var(--color-slate);
+    border-color: rgba(108, 173, 223, 0.2);
+}
+
+/* =====================================
+   Footer Dark Mode
+   ===================================== */
+
+body.dark .footer {
+    background-color: #000306;
+    border-top: 1px solid rgba(108, 173, 223, 0.1);
+}
+
+/* =====================================
+   Section Title Gradient (Dark Mode)
+   ===================================== */
+
+body.dark .section-title {
+    background: linear-gradient(135deg, var(--color-sky), var(--color-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* =====================================
+   Mobile Menu Dark Mode
+   ===================================== */
+
+body.dark .mobile-menu {
+    background-color: var(--color-dark-bg);
+}
+
+/* =====================================
+   Scrollbar Dark Mode
+   ===================================== */
+
+body.dark ::-webkit-scrollbar-track {
+    background: var(--color-dark-bg);
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+    background: var(--color-sky);
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover {
+    background: #5896C5;
+}
+
+/* =====================================
+   Shadow Adjustments for Dark Mode
+   ===================================== */
+
+body.dark .card:hover,
+body.dark .case-study-card:hover,
+body.dark .award-card:hover,
+body.dark .highlight-card:hover,
+body.dark .testimonial-card:hover,
+body.dark .project-card:hover,
+body.dark .blog-card:hover {
+    box-shadow: 0 20px 40px rgba(108, 173, 223, 0.2);
+}
+
+/* =====================================
+   Text Color Utilities for Dark Mode
+   ===================================== */
+
+body.dark .text-secondary {
+    color: rgba(243, 246, 249, 0.7);
+}
+
+body.dark .text-muted {
+    color: rgba(243, 246, 249, 0.5);
+}
+
+/* =====================================
+   Border Colors for Dark Mode
+   ===================================== */
+
+body.dark hr {
+    border-color: rgba(108, 173, 223, 0.1);
+}
+
+body.dark .border {
+    border-color: rgba(108, 173, 223, 0.2);
+}
+
+/* =====================================
+   Background Utilities for Dark Mode
+   ===================================== */
+
+body.dark .bg-light {
+    background-color: #001838;
+}
+
+body.dark .bg-white {
+    background-color: #001838;
+}
+
+/* =====================================
+   Specific Dark Mode Fixes
+   ===================================== */
+
+/* Ensure proper contrast for specific elements */
+body.dark .highlight-title,
+body.dark .award-title,
+body.dark .testimonial-author strong {
+    color: var(--color-slate);
+}
+
+/* Case study section headers maintain their colors */
+body.dark .case-study-header {
+    /* Sky blue background stays the same */
+    background-color: var(--color-sky);
+    color: white;
+}
+
+body.dark .case-study-header.accent {
+    /* Yellow accent background stays the same */
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+}
+
+/* Award header maintains its color */
+body.dark .award-header {
+    background-color: var(--color-sky);
+    color: white;
+}

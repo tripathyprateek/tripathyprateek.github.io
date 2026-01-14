@@ -1,0 +1,67 @@
+/* ============================================
+   PM Toolbelt Section Styles
+   ============================================ */
+
+/* PM Toolbelt */
+.toolbelt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+body.dark .tool-card {
+    background-color: #001838;
+}
+
+.tool-header {
+    background-color: var(--color-sky);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.tool-header.yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+}
+
+.tool-header.navy {
+    background-color: var(--color-navy);
+    color: white;
+}
+
+body.dark .tool-header.navy {
+    background-color: var(--color-slate);
+    color: var(--color-navy);
+}
+
+.tool-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.tool-list {
+    padding: 1.5rem;
+    list-style: none;
+}
+
+.tool-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(108, 173, 223, 0.1);
+}
+
+.tool-list li:last-child {
+    border-bottom: none;
+}

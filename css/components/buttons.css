@@ -1,0 +1,187 @@
+/* Button Components - Man City Theme */
+
+/* =====================================
+   Base Button Styles
+   ===================================== */
+button {
+    font-family: var(--font-family-primary);
+    cursor: pointer;
+}
+
+/* =====================================
+   Primary Button (Man City Yellow)
+   ===================================== */
+.btn-primary {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-highlight);
+    display: inline-block;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-highlight);
+}
+
+/* =====================================
+   Secondary Button (Outline)
+   ===================================== */
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-base);
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--color-navy);
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* =====================================
+   LinkedIn Button (Prominent)
+   ===================================== */
+.btn-linkedin {
+    background: linear-gradient(135deg, #0077B5 0%, #005582 100%);
+    color: white;
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-base);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    box-shadow: 0 4px 0 #005582, 0 8px 16px rgba(0, 119, 181, 0.3);
+    border: none;
+}
+
+.btn-linkedin svg {
+    transition: transform var(--transition-fast);
+}
+
+.btn-linkedin:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #005582, 0 12px 24px rgba(0, 119, 181, 0.4);
+    background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+}
+
+.btn-linkedin:hover svg {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.btn-linkedin:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 0 #005582, 0 8px 16px rgba(0, 119, 181, 0.3);
+}
+
+/* =====================================
+   Resume Button (Navbar)
+   ===================================== */
+.btn-resume {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-highlight);
+    border: none;
+}
+
+.btn-resume:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* =====================================
+   Form Submit Button
+   ===================================== */
+.form-submit {
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    width: 100%;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-highlight);
+}
+
+.form-submit:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-submit.success {
+    background-color: #22c55e;
+    color: white;
+}
+
+.form-submit.error {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* =====================================
+   Button Group
+   ===================================== */
+.button-group {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+/* =====================================
+   Responsive Buttons
+   ===================================== */
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-secondary,
+    .btn-linkedin {
+        padding: 0.875rem 1.5rem;
+        font-size: var(--font-size-sm);
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button-group .btn-primary,
+    .button-group .btn-secondary,
+    .button-group .btn-linkedin {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}

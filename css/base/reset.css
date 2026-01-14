@@ -1,0 +1,66 @@
+/* CSS Reset and Base Styles */
+
+/* =====================================
+   Global Reset
+   ===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================================
+   HTML & Body
+   ===================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: var(--line-height-normal);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+body.dark {
+    background-color: var(--color-dark-bg);
+    color: var(--color-slate);
+}
+
+/* =====================================
+   Selection Styling
+   ===================================== */
+::selection {
+    background-color: rgba(108, 173, 223, 0.4);
+}
+
+::-moz-selection {
+    background-color: rgba(108, 173, 223, 0.4);
+}
+
+/* =====================================
+   Custom Scrollbar
+   ===================================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-slate);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-sky);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5896C5;
+}
+
+/* Dark mode scrollbar */
+body.dark ::-webkit-scrollbar-track {
+    background: var(--color-dark-bg);
+}
